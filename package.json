@@ -1,0 +1,51 @@
+{
+  "name": "mygo",
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "Quickly create a yarn v4 project and apply optimal initial configuration",
+  "author": "fz6m",
+  "homepage": "https://github.com/xn-sakina/mygo#README",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xn-sakina/mygo"
+  },
+  "keywords": [
+    "yarn",
+    "yarn-v4"
+  ],
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "bin": {
+    "mygo": "bin/mygo.js"
+  },
+  "scripts": {
+    "dev": "tsc -w",
+    "build:deps": "dora build",
+    "build": "rimraf dist && tsc",
+    "push": "soyo build && cd ./dist && npm publish --registry https://registry.npmjs.com/"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.0",
+    "@types/node": "^20.12.5",
+    "@xn-sakina/dora": "^1.1.1",
+    "@xn-sakina/mental": "^4.2.1",
+    "chalk": "^5.3.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-sakina": "^4.4.0",
+    "execa": "^8.0.1",
+    "mygo": "link:./",
+    "prettier": "^3.2.5",
+    "soyo": "^1.0.2",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.4"
+  },
+  "packageManager": "pnpm@8.14.1",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "lodash": "^4.17.21",
+    "rimraf": "^5.0.5"
+  }
+}
