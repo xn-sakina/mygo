@@ -12,9 +12,9 @@ Everyone is using `pnpm`, recommended to use `pnpm` to execute:
 
 ```bash
   # in the current dir
-  pnpx mygo
+  pnpx mygo init
   # in the specified dir
-  pnpx mygo ./dir-name
+  pnpx mygo init ./dir-name
 ```
 
 ### License
